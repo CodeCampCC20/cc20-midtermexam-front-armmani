@@ -6,7 +6,7 @@
 
 baseURL: "http://54.252.155.248"
 
-- [] : API V1 TODO
+- [x] : API V1 TODO
 - [x] : API V2 TODO CRUD WITH AUTHENTICATED
 - [] : API V3 MOVIE "https://www.themoviedb.org"
 
