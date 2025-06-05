@@ -7,8 +7,4 @@ todoApi.login = (input) => {
   return axios.post(`${baseURL}/api/V1/auth/login`, input)
 }
 
-todoApi.addNewTask = (input) => {
-  return axios.post(`${baseURL}/api/V1/todos`, input)
-}
-
 export default todoApi;

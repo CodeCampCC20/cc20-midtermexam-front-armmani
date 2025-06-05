@@ -1,15 +1,16 @@
 import React, { useState } from 'react'
 import TaskList from './TaskList';
-import { schema } from '../validate/schema';
+
 
 function NewTask() {
 
-  const [inputTask, setInputTask] = useState([{ id: 1, task: "a" }]);
+  const [inputTask, setInputTask] = useState([]);
   const [input, setInput] = useState("");
 
-  const hdlAddTask = async (e) => {
+  const hdlAddTask = (e) => {
     let clonearr = [...inputTask , { id: Date.now(), task: input}]
     setInputTask(clonearr)
+    setInput("")
   }
 
   return (
@@ -22,7 +23,7 @@ function NewTask() {
             type="text"
             className="input"
             placeholder="Type HERE"
-            value={inputTask.task}
+            value={input}
             id='task'
             onChange={(e) => setInput(e.target.value)}
           />

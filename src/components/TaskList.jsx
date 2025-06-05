@@ -2,7 +2,7 @@ import React from 'react'
 
 function TaskList({ item }) {
 
-  const hdlRemoveTask = (e) => {
+  const hdlRemove = (e) => {
     e.preventDefault
   }
   return (
@@ -17,7 +17,7 @@ function TaskList({ item }) {
       <button
         type="submit"
         className="btn btn-error"
-        onClick={hdlRemoveTask}
+        onClick={hdlRemove}
       >X</button>
     </div>
   )
